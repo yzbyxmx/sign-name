@@ -9,17 +9,12 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
+      path: '/hello-world',
+      name: 'hello-world',
       component: HelloWorld
     },
     {
-      path:'/canvas-test',
-      name:'canvas-test',
-      component:CanvasTest
-    },
-    {
-      path:'/sign-name',
+      path:'/',
       name:'sign-name',
       component:SignName
     }
