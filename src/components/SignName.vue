@@ -3,6 +3,9 @@
         <canvas id="canvas" width="300" height="150">
 
         </canvas>
+        <div class="img-sec">
+         <img :src="imgSrc"/>
+        </div>
         <div class="btn">
           <span @click="toClear()">清除</span>
           <span @click="toSave()">保存</span>
@@ -16,7 +19,8 @@
         data(){
           return {
               ctx:null,
-              canvas:null
+              canvas:null,
+              imgSrc:''
           }
         },
         mounted() {
@@ -50,7 +54,10 @@
           },
           toSave() {
             let base64Img = this.canvas.toDataURL()
-            console.log(123,base64Img)
+            let img = new Image()
+            img.src = base64Img
+            this.imgSrc = base64Img
+           console.log('===',base64Img)
           }
         }
 
@@ -69,6 +76,9 @@
       width: px2Vw(185);
       text-align: center;
     }
+  }
+  .img-sec {
+    padding-top: px2Vw(200);
   }
   canvas {
     position: fixed;

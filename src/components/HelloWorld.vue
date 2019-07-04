@@ -47,7 +47,10 @@ export default {
         hours = hours > 12 ? hours -12 : hours
         let minute = minutes + secondes / 60
         let hour = hours + minutes / 60
+        let monthStr = (time.getMonth() +1) > 9 ? time.getMonth() + 1 : '0'+ (time.getMonth() + 1)
+        let dayStr = time.getDay() > 9 ? time.getDay() : '0'+time.getDay()
         ctx.save()
+
 
         //draw Numbers
         ctx.font = '25px Arial';
@@ -99,6 +102,11 @@ export default {
         ctx.fillText('adidas',-10,-80)
         ctx.restore()
 
+        ctx.save()
+        ctx.font = '30px'
+        ctx.fillText((monthStr+'-'+dayStr),70,3)
+        ctx.restore()
+
     },
     clearCanvas(ctx) {
       ctx.clearRect(-150,-150,300,300)
@@ -108,7 +116,10 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
+  .hello {
+    text-align: center;
+  }
   canvas {
     /*border: 1px solid #2c3e50;*/
   }
