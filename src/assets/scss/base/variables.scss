@@ -1,0 +1,59 @@
+//color
+
+
+$color-warning: #ff8022;
+
+$color-99: #999;
+$color-66: #666;
+$color-ff: #fff;
+$color-fb: #fbfbfb;
+
+$color-ee: #eee;
+$color-dd: #ddd;
+$color-e4: #e4e4e4;
+$color-layer: rgba(0, 0, 0, 0.4);
+$color-4778ba: #4778ba;
+$color-link: #488ff9;
+
+$color-33: #333;
+$color-dc: #dcdcdc;
+$color-cc: #ccc;
+$color-f9: #f9f9f9;
+$color-f5: #f5f5f5;
+$color-e5: #e5e5e5;
+$color-df: #dfdfdf;
+$color-fd: #fdfdfd;
+
+//新规范 颜色
+//全局
+$c_black: #000;
+$c_dark: #262a30;
+$c_gray5: #5c626b;
+$c_gray4: #959ba3;
+$c_gray3: #cbcfd6;
+$c_gray2: #e9ecf0;
+$c_gray1: #f7f8f9;
+$c_white: #fff;
+
+//头像
+$c_p_1: #2dc888;
+$c_p_2: #488ff9;
+$c_p_3: #ffa400;
+$c_p_4: #fb7171;
+
+//默认应用色
+$c_a_green: #2dc888;
+$c_a_blue: #488ff9;
+$c_a_yellow: #ffa400;
+$c_a_red: #fb7171;
+$c_a_violet: #8d71ff;
+$c_a_orange: #ff8022;
+
+//font
+
+$fontEN:-apple-system-font,"Helvetica Neue";
+$fontCN:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";
+$fontSans:sans-serif;
+$fontDefault:$fontEN,$fontSans;
+
+
